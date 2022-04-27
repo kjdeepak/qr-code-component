@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&family=Outfit:wght@400;700&display=swap');
+
+body {
+    background-color: hsl(212, 45%, 89%);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Bellefair', serif;
+    font-family: 'Outfit', sans-serif;
+    overflow: auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.container__card {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 12px;
+    margin: auto;
+    padding: 20px 10px;
+    text-align: center;
+    width: 300px;
+}
+
+.container__image {
+    border-radius: 12px;
+    width: 280px;
+}
+
+.container__title {
+    color: hsl(218, 44%, 22%);
+    font-weight: 700;
+}
+
+.container__body {
+    color: hsl(220, 15%, 55%);
+    font-size: 15px;
+    font-weight: 400;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.container__attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.container__attribution>a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width:320px) {
+    .container {
+        right: auto;
+    }
+}
